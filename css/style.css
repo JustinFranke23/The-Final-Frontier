@@ -1,0 +1,25 @@
+    #main-header{
+    text-align: center;
+    background-color: black;
+    color: beige;
+    position: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    width:100%;}
+    
+    #main-footer{
+    text-align: center;
+    background-color:dimgrey;
+    color: khaki;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;}
+
+    body {
+        font: normal 18px Arial, Helvetica, sans-serif;
+    }
+

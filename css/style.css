@@ -4,39 +4,26 @@
     box-sizing: border-box;
 }
 
-#main-header{
-    overflow: hidden;
+header{
     background-color: black;
-    color:#FF0080;
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
     
-#main-footer{
+.main-footer{
     text-align: center;
     background-color:dimgrey;
     color: #EFD3B5;
     position: absolute;
-    right: 0;
-    left: 0;
     bottom: 0;
-    height: 50px;
+    height: 20px;
     width: 100%;
-    overflow: hidden;
 }
 
 body {
     font: normal 18px Arial, Helvetica, sans-serif;
-    padding-top: 60px;
     background-color:#6b3058;
     margin: 0;
 }
 
-nav {
-    padding: 20px;
-    margin: 20px;
-}
     /*Astronaut image */
 img {
     display: block;
@@ -53,7 +40,7 @@ a{
     text-decoration: none;
 }
 
-#navbar{
+.navbar{
     min-height: 70px;
     display: flex;
     justify-content: space-between;
@@ -61,21 +48,76 @@ a{
     padding: 0 24px;
 }
 
-#navmenu{
+.nav-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
 }
 
-#nav-branding{
+.nav-branding{
     font-size: 2rem;
 }
 
-#nav-link{
+.nav-link{
     transition: 0.7s ease;
 }
 
-#nav-link:hover{
+.nav-link:hover{
     color: purple;
+}
+
+.blocker{
+    height: 55px;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+.nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nav-item{
+    margin: 16px 0;
+}
+
+.nav-menu.active{
+    left: 0;
+}
 }

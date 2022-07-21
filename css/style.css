@@ -59,6 +59,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+    overflow: hidden;
 }
 
 .nav-menu{
@@ -94,21 +95,21 @@ a{
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: white;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: #FF0080;
 }
 
-@media(max-width:768px){
+@media(max-width:770px){
     .hamburger{
         display: block;
     }
 
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
     .hamburger.active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
     }
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
@@ -133,4 +134,10 @@ a{
 .nav-menu.active{
     left: 0;
 }
+}
+
+/* Phone Media Query */
+@media screen and (min-width:350px) {
+
+    
 }

@@ -35,15 +35,6 @@ body {
     margin: 0;
 }
 
-    /*Astronaut image */
-img {
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, .6) 5px 5px 5px;
-    
-}
-
 li{
     list-style: none;
 }
@@ -53,6 +44,15 @@ a{
     text-decoration: none;
 }
 
+ /*Astronaut image */
+ .Astronaut {
+    width: 1200px;
+    height: 700px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, .6) 5px 5px 5px;
+}
 .navbar{
     min-height: 70px;
     display: flex;
@@ -137,7 +137,8 @@ a{
 }
 
 /* Phone Media Query */
-@media screen and (min-width:350px) {
-
-    
+@media screen and (max-width:350px) {
+ .Astronaut{
+    width: 75%;
+}
 }

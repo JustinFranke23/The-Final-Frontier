@@ -6,7 +6,6 @@
 
 header{
     width: 100%;
-    margin-bottom: 20px;
     top: 0;
 }
 
@@ -23,6 +22,7 @@ h2{
 h3{
     text-align: center;
     font-size: 1.5rem;
+    padding: 10px;
 }
     
 .main-footer{
@@ -125,10 +125,6 @@ a{
     color: purple;
 }
 
-.blocker{
-    height: 60px;
-}
-
 .hamburger{
     display: none;
     cursor: pointer;
@@ -162,8 +158,9 @@ a{
     background-color: #A91B60;
     margin: 15px;
     border-radius: 20px;
-    height: 550px;
+    height: 600px;
     width: 400px;
+    box-shadow: rgba(0, 0, 0, .6) 5px 5px 5px;
 }
 
 .card-pic{
@@ -188,6 +185,81 @@ a{
     transform: scale(1.04);
     transition: all 1s ease;
 }
+
+.slide{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-item{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    animation: moveImages 20s infinite;
+    opacity: 0;
+}
+
+.slide-item:nth-child(1){
+    animation-delay: 10s;
+}
+
+.slide-item:nth-child(2){
+    animation-delay: 20s;
+}
+
+.slide-item:nth-child(3){
+    animation-delay: 30s;
+}
+
+.slide-item:nth-child(4){
+    animation-delay: 40s;
+}
+
+.slide-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-item-text{
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 0;
+    transform: translatey(-50);
+    color: white;
+    background-color: black;
+    padding: 10rem 5rem;
+    opacity: 5;
+}
+
+.slide-item-text h5{
+    font-size: 6rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+
+.slide-item-text p{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    font-weight: 250;
+}
+
+@keyframes moveImages{
+    15%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+}
+
+
 
 @media(max-width:770px){
     .hamburger{

@@ -141,6 +141,7 @@ a{
 }
 
 /*containers*/
+
 .container{
     display: flex;
     justify-content: center;
@@ -154,6 +155,7 @@ a{
 }
 
 /*card properties*/
+
 .card{
     background-color: #A91B60;
     margin: 15px;
@@ -185,6 +187,8 @@ a{
     transform: scale(1.04);
     transition: all 1s ease;
 }
+
+/* JWST Slide properties */
 
 .jwstbody {
     background-color: black;
@@ -259,6 +263,35 @@ a{
     font-weight: 250;
 }
 
+/*Contact Us*/
+
+.contact-body{
+    width: 100%;
+    height: 100vh;
+}
+
+.contact{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+.contact::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1517976487492-5750f3195933?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80') no-repeat center;
+    background-size: cover;
+    z-index: -1;
+}
+
 @keyframes moveImages{
     20%{
         opacity: 1;
@@ -275,6 +308,7 @@ a{
 }
 
 
+/* Hamburger Menu */
 
 @media(max-width:770px){
     .hamburger{

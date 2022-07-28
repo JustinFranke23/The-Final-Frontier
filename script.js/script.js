@@ -14,11 +14,11 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 /*Contact Form Validation*/
 
 const name = document.getElementById('name')
-const password = document.getElementById('password')
-const form = document.getElementById('form')
+const email = document.getElementById('email')
+const main = document.getElementById('main')
 const errorElement = document.getElementById('error')
 
-form.addEventListener('submit', (e) => {
+main.addEventListener('submit', (e) => {
     let messages = []
     if (name.value === '' || name.value == null){
         messages.push('Name is required')

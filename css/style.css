@@ -369,6 +369,10 @@ h2::after{
     background-color: #6b3058;
 }
 
+.error{
+    position: relative;
+}
+
 @media screen and (max-width: 880px){
     .contact-info{
         grid-template-columns: 1fr;
@@ -450,6 +454,12 @@ h2::after{
         width: 600px;
         height: 400px;
     }
+    .h3i{
+        font-size: 1.5rem;
+    }
+    .h2i{
+        font-size: 3rem;
+    }
 }
 
 /*desktop Media Query */
@@ -457,6 +467,12 @@ h2::after{
     .Astronaut{
         width: 1000px;
         height: 600px;
+    }
+    .h3i{
+        font-size: 2rem;
+    }
+    .h2i{
+        font-size: 4rem;
     }
 }
 

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Final Frontier</title>
+    <script defer src="script.js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
@@ -37,23 +38,25 @@
     </header>
     <script src="script.js/script.js">
     </script>
-    <script defer src="script.js/script.js">
-
-    </script>
-        <main>
-        <div class="contact">
+    <div id="error"></div>
+    <main>
+        <div></div> 
+         <div class="contact">
             <div class="contact-info">
-                <div class="left"></div>
-                <div class="right">
-                <h2>Contact Us</h2>
+                <div class="left"></div><div class="right">
+     <form action="/" method="GET">
+               <h2>Contact Us</h2>
                 <input type="text" name="name" class="field name" placeholder="Your Name">
-                <input type="email" class="field" placeholder="Your Email">
+                <input type="text" class="field" placeholder="Your Email">
                 <input type="text" class="field" placeholder="Your Phone">
                 <textarea class="field area" placeholder="Message"></textarea>
-                <button class="btn">Send</button>
-            </div>
+              <button type="submit" class="btn">submit</button>
         </div>
+     </form>
+    </div>
     </main>
+    </body>
+    </body>
     <footer class="main-footer">
      <p>Created by Justin Franke. © 2022</p>
     </footer>

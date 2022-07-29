@@ -373,7 +373,7 @@ h2::after{
     position: relative;
 }
 
-@media screen and (min-width: 880px){
+@media screen and (max-width: 880px){
     .contact-info{
         grid-template-columns: 1fr;
     }
@@ -398,6 +398,24 @@ h2::after{
     }
 }
 
+
+/* Hamburger Menu */
+
+@media(max-width:770px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
 .nav-menu{
     position: fixed;
     left: -100%;
@@ -417,55 +435,6 @@ h2::after{
 .nav-menu.active{
     left: 0;
 }
-
-
-/*jwst properties*/
-
-@media screen and (min-width: 1000px){
-    .slide-item-text{
-        max-width: 70%;
-        padding: 5rem 1rem;
-    }
-
-    .slide-item-text h5{
-        font-size: 3rem;
-    }
-}
-
-@media screen and (min-width: 767px){
-    .slide-item-text{
-        max-width: 100%;
-        padding: 2rem;
-        top: initial;
-        bottom: 0;
-        transform: initial;
-    }
-
-    .slide-item-text h5{
-        font-size: 2rem;
-    }
-
-    .slide-item-text p{
-        font-size: 1.2rem;
-    }
-}
-
-/* Hamburger Menu */
-
-@media(min-width:770px){
-    .hamburger{
-        display: block;
-    }
-
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
 }
 
 /* Phone Media Query */
@@ -494,7 +463,6 @@ h2::after{
 }
 
 /*desktop Media Query */
-
 @media screen and (min-width:1100px) {
     .Astronaut{
         width: 1000px;
@@ -505,5 +473,36 @@ h2::after{
     }
     .h2i{
         font-size: 4rem;
+    }
+}
+
+/*jwst properties*/
+
+@media screen and (max-width: 1000px){
+    .slide-item-text{
+        max-width: 70%;
+        padding: 5rem 1rem;
+    }
+
+    .slide-item-text h5{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .slide-item-text{
+        max-width: 100%;
+        padding: 2rem;
+        top: initial;
+        bottom: 0;
+        transform: initial;
+    }
+
+    .slide-item-text h5{
+        font-size: 2rem;
+    }
+
+    .slide-item-text p{
+        font-size: 1.2rem;
     }
 }

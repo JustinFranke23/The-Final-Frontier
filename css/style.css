@@ -373,7 +373,7 @@ h2::after{
     position: relative;
 }
 
-@media screen and (max-width: 880px){
+@media screen and (min-width: 880px){
     .contact-info{
         grid-template-columns: 1fr;
     }
@@ -401,7 +401,7 @@ h2::after{
 
 /* Hamburger Menu */
 
-@media(max-width:770px){
+@media(min-width:770px){
     .hamburger{
         display: block;
     }
@@ -478,7 +478,7 @@ h2::after{
 
 /*jwst properties*/
 
-@media screen and (max-width: 1000px){
+@media screen and (min-width: 1000px){
     .slide-item-text{
         max-width: 70%;
         padding: 5rem 1rem;
@@ -489,7 +489,7 @@ h2::after{
     }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (min-width: 767px){
     .slide-item-text{
         max-width: 100%;
         padding: 2rem;

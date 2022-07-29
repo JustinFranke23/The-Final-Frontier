@@ -2,6 +2,7 @@ Hello! I am a junior web developer looking to get into the industry and I have a
 
      CSS FEATURES:
      ⚫ Hamburger icon is included for all pages when the width is set to 770 pixels or less.
+     ⚫ My home page was designed with mobile in mind and adjust accordingly to phone, tablet, and desktop sizes.
      ⚫ On the planets tab, I used the flex wrap feature to have the planets adjust accordinglgy to the page size.
      ⚫ When shrinmking the James Webb Space Telescope page down to 1000 pixels or less the text will shrink and once it reaches 767 pixels or less, The text box will move to the bottom of the screen with even smaller text.
      ⚫ When shrinking the 'Contact Us' page down to 880 pixels or less, the picture on the page will go on top of the contact us form, giving it a cleaner look for mobile users.
